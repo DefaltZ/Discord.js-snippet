@@ -1,0 +1,18 @@
+{
+	"Discord.js snippets": {
+		"prefix": ["discord", "const discord"],
+		"body": [
+			"const Discord = require(\"discord.js\");",
+			"const client = new Discord.client()",
+			"const prefix = ''",
+			"const token = ''",
+
+			"client.once('ready' () => {",
+			    "console.log('')",
+		    "});",
+
+			"client.login(token)"
+
+		]
+	}
+}
