@@ -1,18 +1,45 @@
 {
-	"Discord.js snippets": {
+	"Discord.js main file": {
 		"prefix": ["discord", "const discord"],
 		"body": [
 			"const Discord = require(\"discord.js\");",
 			"const client = new Discord.client()",
 			"const prefix = ''",
 			"const token = ''",
-
+            "",
 			"client.once('ready' () => {",
 			    "console.log('')",
 		    "});",
-
+            "",
 			"client.login(token)"
 
 		]
-	}
+	},
+    "command file format": {
+        "prefix": ["module", "module.exports"],
+        "body": [
+            "module.exports = {",
+            "name: ''",
+            "description: ''",
+            "execute(message, args) {",
+            "",
+                "}",
+            "}"
+        ]
+    },
+    "discord embed": {
+        "prefix": ["Embed", "Discord Embed"],
+        "body": [
+            "const embed = new Discord.MessageEmbed()",
+            "    .setColor('')",
+            "    .setTitle('')",
+            "    .setDescription('')",
+            "    .setURL('')",
+            "    .setFields(",
+            "        {name: '', value: ''})",
+            "    .setFooter('')"
+        ]
+    }
+
+    
 }
