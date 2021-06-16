@@ -8,7 +8,7 @@
 			"const token = ''",
             "",
 			"client.once('ready' () => {",
-			    "console.log('')",
+			"    console.log('')",
 		    "});",
             "",
 			"client.login(token)"
@@ -23,7 +23,7 @@
             "description: ''",
             "execute(message, args) {",
             "",
-                "}",
+            "    }",
             "}"
         ]
     },
