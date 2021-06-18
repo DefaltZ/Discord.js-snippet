@@ -51,6 +51,24 @@
             "    client.commands.set(command.name, command);",
             "}"
         ]
+    },
+    "create channel event": {
+        "prefix": ["create", "create channel"],
+        "body" : [
+            "guild.channels.create('', {reason: ''})",
+            "    .then(console.log)",
+            "    .then(console.error)",
+            "",
+            "guild.channels.create('new voice', {",
+            "    type: 'voice",
+            "p{ermissionOverwrites: [",
+            "    {",
+            "      id: message.author.id",
+            "      deny: ['']",
+            "    },",
+            "  ],",
+        "})"
+        ]
     }
 
     
