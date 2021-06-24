@@ -69,6 +69,20 @@
             "  ],",
         "})"
         ]
+    },
+    "delete channel event": {
+        "prefix": ["deletechannel" , "delchannel", "delc"],
+        "body": [
+            "module.exports = {",
+            "  commands : ['delchannel']",
+            "  maxargs: 0",
+            "  permissionError: 'You must be an admin to use this command'",
+            "  permissions: 'ADMINISTRATOR'",
+            "  callback: (message, arguments, text) => {",
+            "    message.channel.delete()",
+            "  },",
+            "}"
+        ]
     }
 
     
